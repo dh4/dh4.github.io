@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0" />
+  <title>Dan Hasting</title>
+  <link rel='stylesheet' href='/assets/css/bootstrap.min.css' type='text/css' />
+  <style>
+      .container {
+          width: 95%;
+          max-width:600px;
+          margin:0 auto;
+      }
+
+      .header {
+          font-size: 72px;
+          margin-top:30px;
+          margin-bottom: 30px;
+      }
+
+      .center {
+          text-align:center;
+      }
+
+      .error {
+          color: red;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="center header">Dan Hasting</h1>
+    <p class="center">Have a question or inquiry? Fill out the form below to contact me.</p>
+    <p class="center">* Required Field</p><br />
+    <form class="form-horizontal center-block" method="post" action="https://formspree.io/contact@hasting.email">
+        <div class="form-group">
+            <label class="control-label">Name: *</label>
+            <input type="text" class="form-control" name="name" required />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Email:</label>
+            <input type="email" class="form-control" name="email" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Phone:</label>
+            <input type="text" class="form-control" name="phone" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Comments: *</label>
+            <textarea class="form-control" name="comments" rows="7" required></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary center-block">Submit</button>
+            <input type="hidden" name="_next" value="//dh4.github.io/contact/thanks.html" />
+            <input type="hidden" name="_subject" value="Contact Submission from dh4.github.io" />
+            <input type="hidden" name="_format" value="plain" />
+        </div>
+    </form>
+  </div>
+</body>
